@@ -1,0 +1,575 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+body {
+    font-family: 'Kurale', sans-serif;
+    color: #5c30af;
+}
+
+
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #15032a;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    z-index: 1000;
+
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo {
+    height: 200px;
+    padding-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+     /* Distribute items with space between */
+    width: 100%; /* Make the ul take the full width of the nav */
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Ensure items are centered vertically */
+    text-shadow: -1px -1px 0 #e109b9, 1px -1px 0 #e109b9;
+    font-size: 20px;
+}
+
+nav ul li {
+    flex: 1; /* Ensure each li takes equal space */
+    text-align: center; /* Center the text within each li */
+}
+
+nav ul li a {
+    color: #fae8eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Highlight color */
+}
+
+nav ul li a:visited,
+nav ul li a:focus,
+nav ul li a:active {
+    color: rgb(221, 221, 221) !important; /* Ensure it stays white */
+    text-decoration: none !important; /* Remove underline */
+}
+
+
+
+#center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+  }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            color: #3a0775; /* Primary dark blue color */
+            font-family: Pattaya;
+    font-size: 40px;
+    text-shadow: -.5px -.5px 0 #e563cd, 1px -1px 0 #e563cd;
+            height: 100%;
+            width: 100%;
+
+        }
+    /* Video Container */
+    .video-container {
+      position: relative;
+      width: 80%; /* Adjust width as needed */
+      max-width: 1000px; /* Optional: limit the maximum width of the video */
+    }
+
+    video {
+      width: 100%;
+      height: 100vh; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensures video covers the container properly */
+    }
+
+        .texty-container {
+            position: absolute;
+            top: 60px; /* Positions text at the top */
+            left: 50%;
+            transform: translateX(-50%); /* Centers text horizontally */
+            text-align: center;
+            z-index: 2;
+            padding: 10px; /* Optional padding for some spacing */
+            margin-top: 50px;
+            width: 100%;
+        }
+
+/* Hero Section */
+.hero {
+display: flex;
+    position: relative;
+    width: 100%;
+    height: 150px; /* Set the height of the banner */
+    overflow: hidden; /* Ensure any overflow content is hidden */
+    background-color: #96C7F7;
+    text-align: center;
+    color: rgb(221, 221, 221);
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Place the image behind the text */
+    opacity: 100%;
+}
+
+.hero-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the GIF covers the entire banner area */
+    opacity: 80%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    z-index: 2; /* Place the text above the image */
+    padding: 1em;
+    border-radius: 10px; /* Optional: Add rounded corners to the background */
+    font-family: 'Lemon', serif;
+    font-size: calc(12px + 2vw); /* Responsive font size */
+
+}
+
+
+.wammalamma{
+    size: calc(12px+2vw);
+    margin-top:0;
+    transform: translate(-50%, -50%);
+    animation: spin 10s linear infinite; /* Adjust animation duration as needed */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-logo {
+    margin-top:0;
+    width: 70px; /* Adjust width and height as needed */
+    height: 70px;
+    background-image: url('logo.svg'); /* Replace with your logo path */
+    background-size: cover;
+    position: relative;
+    transform: translate(-50%, -50%);
+    animation: spin 10s linear infinite; /* Adjust animation duration as needed */
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Section */
+.section {
+    padding: 2em 2em;
+    text-align: center;
+    padding-bottom: 20px;
+    border-top: 0px;
+}
+
+.section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Content Container */
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+    z-index: 1;
+
+
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 0.5em;
+    color: #3a0775; /* Primary dark blue color */
+    font-family: Pattaya;
+    font-size: 40px;
+    text-shadow: -.5px -.5px 0 #e563cd, 1px -1px 0 #e563cd
+}
+
+/* Add background image to the section */
+.services {
+    display: flex;
+    position: relative; /* Necessary for absolute positioning of the image */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+
+    background-color: #e6d2e5;
+    font-family: Kurale;
+  }
+
+  /* Center website */
+  .main {
+    max-width: 100%;
+    margin: 1em;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+/* Style the background image */
+.services-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set height to cover full height of the section */
+    background-image: url(''); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover;
+    opacity: 100%;
+    z-index: -1; /* Place the image behind other content */
+    padding-top: 3em;
+    background-color: #f2cadd;
+
+}
+
+
+.card-noactive{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Card styles */
+.card {
+    background-color:#fae8eb;
+    border-radius: 8px;
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a drop shadow */
+
+}
+
+.card-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover .card-list {
+    transform: scale(1.2); /* Slightly scale up on hover */
+}
+
+.card-avail {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: .5em;
+    text-align: center;
+    width: fit-content;
+    height: auto;
+    margin: auto; /* Center horizontally */
+    margin-bottom: 1em;
+    position: relative; /* Position it in the center of the viewport */
+}
+
+.card p {
+    text-align: justify;
+    margin-bottom: 0.5em;
+}
+
+
+/* Services List */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    justify-items: center;
+    align-content: center;
+    padding-right: 4.5em;
+    padding-left: 4.5em;
+
+}
+
+.service-item {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex: 1 1 200px;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #ccc; /* Adding a border */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a drop shadow */
+
+}
+
+.loc-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set height to cover full height of the section */
+}
+
+/* Style the background image */
+.local-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set height to cover full height of the section */
+    background-image: url(''); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover;
+    opacity: 100%;
+    z-index: -1; /* Place the image behind other content */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    opacity: 100%;
+    background-color: #173459;
+}
+
+.where {
+    display: flex;
+    align-content: left;
+    text-align: left;
+    justify-content: flex-start;
+}
+.who {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* About and Location Content */
+.about-content,
+.location-content,
+.philosophy-content
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.about-text,
+.location-text ul,
+.philosophy-text {
+    flex: 1  ;
+    max-width: 1000px;
+    list-style: none;
+    text-decoration: none;
+    justify-content:center;
+
+}
+
+.about-text ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Images */
+.about-image-wrapper,
+.location-image-wrapper {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.about-image,
+.location-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.careerwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Contact Form */
+
+
+
+
+section#contact .content iframe {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    position: absolute;
+    z-index: 1;
+    pointer-events: auto;
+    background-color: #173459;
+}
+
+.foot {
+    height: 10px;
+}
+
+
+
+
+
+/* Add this to your styles.css file */
+.apply-button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    font-size: 18px; /* Bigger font size */
+    padding: 10px 20px; /* Larger padding */
+    border: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add the slide-in class animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-element {
+    opacity: 0; /* Ensure the element is invisible until the animation plays */
+}
+
+/* Add the slide-in class animation */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-inR {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.slide-elementR {
+    animation: slideInFromRight 1s ease-out forwards;
+    opacity: 0; /* Ensure the element is invisible until the animation plays */
+}

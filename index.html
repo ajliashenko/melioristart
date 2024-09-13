@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+   <!--this is the navigation bar on top it starts here--->
+    <nav  >
+        <ul>
+          <li><a href="#Contact">Contact </a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Products&Services">Products and Services </a></li>
+            <li><a href="#Subscribe">Subscribe</a></li>
+    </nav>
+<!-- the navigation bar ends here-->
+
+<!-- This is the title of the website section-->
+<header id="center-container" style="display:flex; font-family: 'Mogra', lemon; height: auto; justify-content: center; align-items: center;">
+  <div class="video-container">
+      <video autoplay muted loop playsinline>
+          <source src="pink.mp4" type="video/mp4">
+          <source src="pink.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+      </video>
+      <div class="texty-container">
+          <h1>Meliorist Art <br> </h1><h2>Spooky Tarot Pop-up!</h2><br> Find us...<br>
+      </div>
+  </div>
+</header>
+
+<style>
+
+
+                .apply-button {
+
+                    color: white;
+                    font-size: 30px; /* Bigger font size */
+                    padding: 10px 20px; /* Larger padding */
+                    border: none;
+                    border-radius: 5px; /* Optional: rounded corners */
+                    cursor: pointer;
+                    transition: background-color 0.3s ease; /* Smooth hover transition */
+                    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+
+                }
+
+                .apply-button:hover {
+                    background-color: #8313a2; /* Darker blue on hover */
+                }
+            </style>
+
+
+
+            <div id="Contact" class="formz" style="padding-left: 2em; padding-right: 2em; display: flex; justify-content: center;padding-top: 2.5em;;">
+            <button id="contactButton" class="apply-button" style="order: 1; justify-content: center;font-family: Pattaya;">Or book an appointment</button>
+            </div>
+
+        </section>
+
+      </div>
+  </div>
+</header>
+<!--this is where the title section ends-->
+
+        <body>
+            <main>
+<!-- This is your about me section-->
+                <section id="About" class="about section" style="background-color: #cd9fcc;border-top: 0px;">
+                        <div class="card">
+                            <div class="about-content">
+                               <!-- <div class="about-image-wrapper" style="width: auto">
+                                    <img src="yourphoto.jpeg" alt="Arlene Polk" class="about-image ">
+                                </div>-->
+                                <div class="about-text" style="width:min-content;">
+                                    <div class="who" >
+                                        <h2>About Meliorist Art</h2>
+                                    </div>
+                                    <div style="color: #5c30af">
+                                    <p>"Meliorism" is a belief that the world can be made better through individual human effort.</p>
+                                    <p> Meliorist Art will be actively participating in spooky season and hope to provide memorable experiences for the  Hampton Roads/ Norfolk Virginia community.</p>
+                                    <p> We may set up shop in a business or you may find us in the middle of a field, or in the woods on a foggy night.</p>
+                                    <p> If you are a Psychic/Herbalist/Artist and want to join in on the fun, feel free to reach out.</p>
+                                    <p> Available for event booking, both commercial and private</p>
+                                    <p>Quick disclaimer: Meliorist Art does not offer tarot readings over the phone or internet. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+
+        <section id="Products&Services" class="services section" style="background-image: url(Rectangle\ 12.jpg);background-size: cover;; border-top: 0px; padding-top: 2em;">
+            <div class="content" style="width: 100%; margin-left: 0px; margin-right: 0px;">
+<div>
+        <div class="services-image"></div>
+            <h2>Products and Services</h2>
+        </div>
+              <!-- Photo Grid -->
+
+              <style>
+                h1 {
+                  font-size: 50px;
+                  word-break: break-all;
+                }
+
+                /* Flexbox Row */
+                .row {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 16px; /* Add gap between items */
+                }
+
+                /* Flexbox Column */
+                .column {
+                  display: none;
+                  flex: 1 1 calc(33% - 20px); /* Default to 3 columns */
+                }
+
+                .column.show {
+                  display: flex;
+                }
+
+                .contenty {
+                  background-color: #fae8eb;
+                  padding: 10px;
+                  border-radius: 8px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                  width: 100%;
+                  text-align: center;
+                }
+
+                /* Responsive layout */
+                @media screen and (max-width: 1000px) {
+                  .column {
+                    flex: 1 1 calc(50% - 16px); /* 2 columns on medium screens */
+                  }
+                }
+
+                @media screen and (max-width: 600px) {
+                  .column {
+                    flex: 1 1 100%; /* 1 column on small screens */
+                  }
+                }
+
+                /* Style the buttons */
+                .btn {
+                  border: none;
+                  outline: none;
+                  padding: 12px 16px;
+                  background-color:  #fae8eb;
+                  cursor: pointer;
+                  margin: 4px;
+                  font-family: kurale;
+                  font-size: x-large;
+                  color: #5c30af;
+
+                }
+
+                .btn:hover {
+                  background-color:  #f1bfe4;
+                }
+
+                .btn.active {
+                  background-color: #b3a4a4;
+
+                }
+              </style>
+
+
+            <!-- MAIN (Center website) -->
+            <div class="main">
+
+              <div id="myBtnContainer">
+                <button class="btn" onclick="filterSelection('Tarot')"> Tarot and Tinctures</button>
+                <button class="btn" onclick="filterSelection('Art')"> Art</button>
+
+              </div>
+
+              <!-- Portfolio Gallery Grid -->
+              <div class="row">
+                <div class="column Art show">
+                  <div class="contenty">
+                    <img src="drawing three.jpeg" alt="Limbs" style="width:100%">
+                    <h4>Custom Outdoor Decor</h4>
+                    <p>~$100</p>
+                  </div>
+                </div>
+
+               <!-- <div class="column Art show">
+                  <div class="contenty">
+                    <img src="drawing nine.jpeg" alt="Decor" style="width:100%">
+                    <h4>Custom Indoor Decor</h4>
+                    <p>~100</p>
+                  </div>
+                </div>-->
+
+                <div class="column Art show">
+                    <div class="contenty">
+                      <img src="mask.jpeg" alt="Masks" style="width:100%">
+                      <h4>Custom masks</h4>
+                      <p>~$100</p>
+                    </div>
+                  </div>
+
+
+
+                <div class="column Tarot show">
+                  <div class="contenty">
+                    <img src="1card.jpg" alt="1card" style="width:100%">
+                    <h4>1 Card Pull</h4>
+                    <p>$1</p>
+                  </div>
+                </div>
+                <div class="column Tarot show">
+                  <div class="contenty">
+                    <img src="2card.jpg" alt="furniture" style="width:100%">
+                    <h4>9 card pull</h4>
+                    <p>$5</p>
+                  </div>
+                </div>
+
+                <div class="column Tarot show">
+                  <div class="contenty">
+                    <img src="tincture.jpg" alt="alterations" style="width:100%">
+                    <h4>Herbal tincture that totally does NOT immediately relieve menstrual cramps.</h4>
+                    <p>25ml = $25</p>
+                  </div>
+                </div>
+
+              </div>
+            <!-- END MAIN -->
+            </div>
+
+
+            <script>
+              filterSelection("all");
+              function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                  w3RemoveClass(x[i], "show");
+                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+              }
+
+              function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                  }
+                }
+              }
+
+              function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                  }
+                }
+                element.className = arr1.join(" ");
+              }
+            </script>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="Subscribe" style="
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh; /* Set to viewport height */
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  ">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVgviRejEqouenvByaKspecdW_6O9G59_oYm3nJ_YZMrZvVA/viewform?embedded=true"
+      style="
+        width: 100%;
+        max-width: 640px;
+        height: 100%;
+        border: none;
+      "
+      allowfullscreen>
+      Loading…
+    </iframe>
+  </section>
+
+
+
+        <script>
+            document.getElementById('contactButton').addEventListener('click', function() {
+                const subject = "Meliorist Art";
+                const body = "Thank you for considering Meliorist Art!\n\n Please fill out the following so we can better assist\n\nYour Name: \n\nWould you like to book an appointment for a tarot reading?: \n\n What days/ time work best for you?\n\n Were you interested in purchasing art?: \n\n Are you interested in purchasing herbal tinctures?:\n\n Any questions for us?\n\n Thank you, we will get back to you as soon as we can.\n - Meliorist Art ";
+                const mailtoLink = `mailto:Introduction@Medvedska.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                window.location.href = mailtoLink;
+
+
+
+            });
+        </script>
+            </main>
+        <section>
+        <footer>
+            <p>&copy; 2024 Medvedska LLC</p>
+
+        </footer>
+        </section>
+
+        <script type="text/javascript" src="script.js"></script>
+        </html>
