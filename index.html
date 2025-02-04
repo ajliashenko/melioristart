@@ -18,7 +18,7 @@
         <ul>
           <li><a href="#Contact">Contact </a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#Products&Services">Products and Services </a></li>
+            <li><a href="#Products&Services">Services </a></li>
             <li><a href="#Subscribe">Subscribe</a></li>
     </nav>
 <!-- the navigation bar ends here-->
@@ -28,11 +28,11 @@
   <div class="video-container">
       <video autoplay muted loop playsinline>
           <source src="pink.mov" type="video/mov">
-          <source src="pink.mp4" type="video/mp4">
+          <source style="width:100%;" src="sleepingcat.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
       <div class="texty-container">
-          <h1>Meliorist Art <br> </h1><h2>Spooky Tarot Pop-up!</h2><br> Find us...<br>
+          <h1>Meliorist Art <br> </h1><h2>Tarot Readings</h2><br>
       </div>
   </div>
 </header>
@@ -45,6 +45,7 @@
                     color: white;
                     font-size: 30px; /* Bigger font size */
                     padding: 10px 20px; /* Larger padding */
+                    margin-bottom: 10px;;
                     border: none;
                     border-radius: 5px; /* Optional: rounded corners */
                     cursor: pointer;
@@ -60,8 +61,8 @@
 
 
 
-            <div id="Contact" class="formz" style="padding-left: 2em; padding-right: 2em; display: flex; justify-content: center;padding-top: 2.5em;;">
-            <button id="contactButton" class="apply-button" style="order: 1; justify-content: center;font-family: Pattaya;">Or book an appointment</button>
+            <div id="Contact" class="formz" style="padding-left: 2em; padding-right: 2em; display: flex; justify-content: center;;">
+            <button id="contactButton" class="apply-button" style="order: 1; justify-content: center;font-family: Pattaya;">Book an appointment</button>
             </div>
 
         </section>
@@ -74,21 +75,21 @@
         <body>
             <main>
 <!-- This is your about me section-->
-                <section id="About" class="about section" style="background-color: #cd9fcc;border-top: 0px;">
+                <section id="About" class="about section" style="background-color: #2C2C2C;border-top: 0px;">
                         <div class="card">
                             <div class="about-content">
                                <!-- <div class="about-image-wrapper" style="width: auto">
                                     <img src="yourphoto.jpeg" alt="Arlene Polk" class="about-image ">
                                 </div>-->
-                                <div class="about-text" style="width:min-content;">
+                                <div class="about-text" style="width:min-content; overflow-wrap: break-word;">
                                     <div class="who" >
-                                        <h2>About Meliorist Art</h2>
+                                        <h2>Tarot Card Reading? How Does That Work?</h2>
                                     </div>
-                                    <div style="color: #5c30af">
-                                    <p>"Meliorism" is a belief that the world can be made better through individual human effort.</p>
-                                    <p> Meliorist Art provides tarot card readings. <br>Not a psychic, clairvoyant, or a fortune teller, but a tarot card reader. </p>
-                                    <p> Available for event booking, both commercial and private for entertainment purposes.</p>
-                                    <p>Quick disclaimer: Meliorist Art does not offer tarot card readings over the phone or internet. </p>
+                                    <div style="color: #2C2C2C">
+                                    <p>Every card has its own individual and predetermined meaning rooted in symbolism. When the cards are shuffled, those symbols and stories of each card are generated at random.
+                                      <br>Although tarot is used by some people as a way to channel their psychic ability, or predict the future, it is not a service I offer. I have no special powers or any idea what is going on in your life, I will only be telling you what the individual cards mean as an opportunity for self reflection. You may be wondering, doesn't that mean anyone can do this if they put the time in? The answer is yes.
+                                      </p>
+                                    <p>Quick disclaimer: Meliorist Art does not offer tarot card readings over the phone or internet. Once again, not a psychic.</p>
 
                                 </div>
                             </div>
@@ -100,7 +101,7 @@
             <div class="content" style="width: 100%; margin-left: 0px; margin-right: 0px;">
 <div>
         <div class="services-image"></div>
-            <h2>Products and Services</h2>
+            <h2>Services</h2>
         </div>
               <!-- Photo Grid -->
 
@@ -128,8 +129,9 @@
                 }
 
                 .contenty {
-                  background-color: #fae8eb;
+                  background-color: #FAF6F0;
                   padding: 10px;
+                  margin: 20px;
                   border-radius: 8px;
                   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                   width: 100%;
@@ -154,12 +156,12 @@
                   border: none;
                   outline: none;
                   padding: 12px 16px;
-                  background-color:  #fae8eb;
+                  background-color:  #2C2C2C;
                   cursor: pointer;
                   margin: 4px;
                   font-family: kurale;
                   font-size: x-large;
-                  color: #5c30af;
+                  color: #FAF6F0;
 
                 }
 
@@ -177,21 +179,21 @@
             <!-- MAIN (Center website) -->
             <div class="main">
 
-              <div id="myBtnContainer">
-                <button class="btn" onclick="filterSelection('Tarot')"> Tarot and Tinctures</button>
-                <button class="btn" onclick="filterSelection('Art')"> Art</button>
+             <!--<div id="myBtnContainer">
+                <button class="btn" onclick="filterSelection('Tarot')"> Tarot Readings</button>
+                <!--<button class="btn" onclick="filterSelection('Art')"> Art</button>-->
 
               </div>
 
               <!-- Portfolio Gallery Grid -->
-              <div class="row">
+            <!---  <div class="row">
                 <div class="column Art show">
                   <div class="contenty">
                     <img src="drawing three.jpeg" alt="Limbs" style="width:100%">
                     <h4>Custom Outdoor Decor</h4>
                     <p>~$100</p>
                   </div>
-                </div>
+                </div>-->
 
                <!-- <div class="column Art show">
                   <div class="contenty">
@@ -201,13 +203,13 @@
                   </div>
                 </div>-->
 
-                <div class="column Art show">
+               <!--- <div class="column Art show">
                     <div class="contenty">
                       <img src="mask.jpeg" alt="Masks" style="width:100%">
                       <h4>Custom masks</h4>
                       <p>~$100</p>
                     </div>
-                  </div>
+                  </div>-->
 
 
 
@@ -292,7 +294,7 @@
     align-items: center;
     box-sizing: border-box;
   ">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVgviRejEqouenvByaKspecdW_6O9G59_oYm3nJ_YZMrZvVA/viewform?embedded=true"
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVgviRejEqouenvByaKspecdW_6O9G59_oYm3nJ_YZMrZvVA/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">
       style="
         width: 100%;
         max-width: 640px;
@@ -309,7 +311,7 @@
         <script>
             document.getElementById('contactButton').addEventListener('click', function() {
                 const subject = "Meliorist Art";
-                const body = "Thank you for considering Meliorist Art!\n\n Please fill out the following so we can better assist\n\nYour Name: \n\nWould you like to book an appointment for a tarot reading?: \n\n What days/ time work best for you?\n\n Were you interested in purchasing art?:\n\n Any questions for us?\n\n Thank you, we will get back to you as soon as we can.\n - Meliorist Art ";
+                const body = "Thank you for considering Meliorist Art!\n\n Please fill out the following so we can better assist\n\nYour Name: \n\nWould you like to book an appointment for a tarot reading?: \n\n What day/ time work best for you?\n\n Any questions for us?\n\n Thank you, we will get back to you as soon as we can.\n - Meliorist Art ";
                 const mailtoLink = `mailto:Introduction@Medvedska.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
                 window.location.href = mailtoLink;
